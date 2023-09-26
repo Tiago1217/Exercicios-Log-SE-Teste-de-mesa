@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> Menor idade</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>Menor idade</h1>
+
+<p>Nome e idade da primeira pessoa: <span id="oxi111" > </span> </p>
+<p>Nome e idade da segunda pessoa: <span id="ish123" > </span> </p>
+<p><span id="opa123" > </span></p>
+
+
+<script>
+
+let NOME1=(prompt("Digite o nome da primeira pessoa"));
+let DATA1=Number(prompt("Digite ano de nascimento "));
+let NOME2=(prompt("Digite o nome da segunda pessoa"));
+let DATA2=Number(prompt("Digite ano de nascimento"));
+let soma1=(2023-DATA1);
+let soma2=(2023-DATA2);
+let resultado
+let resultadoif2
+
+if(soma1<soma2){
+  resultado=NOME1
+}else{
+  resultado=NOME2
+}
+if(resultado==NOME1){
+  resultadoif2=soma1
+}else{
+  resultadoif2=soma2
+}
+
+
+document.getElementById("oxi111").innerHTML=NOME1 + " " + soma1 + " anos ";
+document.getElementById("ish123").innerHTML=NOME2 + " " +  soma2 + " anos ";
+document.getElementById("opa123").innerHTML=resultado + " é mais novo com " + resultadoif2 + " anos de idade."
+
+</script>
+</body>
+</html>

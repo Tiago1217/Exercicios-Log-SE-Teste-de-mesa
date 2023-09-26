@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Número par</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>Número par</h1>
+
+<p>O número: <span id="oxi111" > </span> </p>
+
+<script>
+
+let NUMERO=Number(prompt("Digite um número "));
+let divisao=(NUMERO%2);
+let resultado;
+
+if(divisao==0){
+  resultado="Par"
+}else{
+  resultado="Ímpar"
+}
+
+
+document.getElementById("oxi111").innerHTML=NUMERO +  " é " + resultado;
+
+</script>
+</body>
+</html>

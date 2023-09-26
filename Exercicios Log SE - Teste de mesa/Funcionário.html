@@ -1,0 +1,29 @@
+<html>
+<head>
+<title> Funcionário</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1> Funcionário </h1>
+
+<p><span id="oxi111" > </span> </p>
+
+<script>
+
+let VENDAS1=Number(prompt("Digite o valor fixado de vendas "));
+let NUMERO1=Number(prompt("Digite um número de vendas do funcionário "));
+let SOMA
+
+if(NUMERO1>VENDAS1){
+    SOMA="ganhou!!"
+}else{
+    SOMA="perdeu"
+}
+
+document.getElementById("oxi111").innerHTML="O funcionário " + SOMA + " o prêmio."
+</script>
+</body>
+</html>

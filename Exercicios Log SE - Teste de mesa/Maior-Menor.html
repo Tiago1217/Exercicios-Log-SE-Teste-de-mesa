@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Maior e Menor</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body leftmargin="80" topmargin="80">
+
+<h1>Maior número</h1>
+
+<p>Numero 1: <span id="oxi111" > </span> </p>
+<p>Numero 2: <span id="ish123" > </span> </p>
+<p>Divisão: <span id="opa123" > </span> </p>
+
+
+<script>
+
+let NUMERO1=Number(prompt("Digite o primeiro número"));
+let NUMERO2=Number(prompt("Digite o segundo número"));
+let resultado;
+
+
+if(NUMERO1>NUMERO2){
+  resultado=NUMERO1;
+}else{
+  resultado=NUMERO2;
+}
+
+document.getElementById("oxi111").innerHTML=NUMERO1;
+document.getElementById("ish123").innerHTML=NUMERO2;
+document.getElementById("opa123").innerHTML="O maior número entre "+ NUMERO1 +" e "+ NUMERO2 +" é "+resultado;
+
+</script>
+</body>
+</html>
